@@ -1,3 +1,5 @@
+import { data } from "../utils/data"
+
 function Footer() {
     return (
         <footer className="rounded-md w-full shadow m-4 mt-0 bg-zinc-700">
@@ -6,13 +8,13 @@ function Footer() {
             </span>
             <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-200 sm:mt-0">
                 <li>
-                    <a href="https://linkedin.com/in/rajputshashank" className="hover:underline me-4 md:me-6">LinkedIn</a>
+                    <a href={data.linkedin} className="hover:underline me-4 md:me-6">LinkedIn</a>
                 </li>
                 <li>
-                    <a href="https://github.com/rajputshashank003" className="hover:underline me-4 md:me-6">Github</a>
+                    <a href={data.github} className="hover:underline me-4 md:me-6">Github</a>
                 </li>
                 <li>
-                    <a href="https://github.com/rajputshashank003/details" className="hover:underline me-4 md:me-6">Project Repo</a>
+                    <a href={data.project_repo} className="hover:underline me-4 md:me-6">Project Repo</a>
                 </li>
             </ul>
             </div>

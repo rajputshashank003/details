@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion";
+import { data } from "../utils/data";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ const Hero = () => {
       <div className="absolute top-[40%] sm:top-[20%] left-[15%] h-36 w-36 bg-blue-700 "></div>
       <div className="p-4 relative h-[90vh] flex flex-col items-center backdrop-blur-[100px]  w-screen font-jetbrains relative text-neutral-300 text-[2.4rem]">
           <div className='text-[4rem] relative w-fit bg-gradient-to-r border-white from-cyan-700 via-cyan-300 to-zinc-200 text-transparent bg-clip-text text-center flex justify-center items-center font-sans'>
-              Shashank Rajput
+              {data.name}
               <span className="h-[1.1px] absolute transition-opacity duration-200 bottom-0 left-0 w-full bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></span>
               <motion.span 
                 initial={{
@@ -55,7 +56,7 @@ const Hero = () => {
                   duration : 0.3,
                   ease : "easeInOut"
                 }}
-                href={"https://projectsvault.vercel.app"} 
+                href={data.projects_link} 
                 className="hover:text-neutral-200 [perspective::1000px] [transform-style:preserve-3d] group relative font-medium font-jetbrains w-fit transform cursor-pointer duration-200 hover:text-[2.5rem] m-4 "
               >
                 <span className="group-hover:text-[4rem] duration-200">P</span>
@@ -74,7 +75,7 @@ const Hero = () => {
                   duration : 0.3,
                   ease : "easeInOut"
                 }}
-                href={"https://leetcode.com/rajputshashank"} 
+                href={data.leetcode_link}
                 className="hover:text-neutral-200 [perspective::1000px] [transform-style:preserve-3d] group relative font-medium font-jetbrains w-fit transform cursor-pointer duration-200 hover:text-[2.5rem] m-4 "
               >
                 <span className="group-hover:text-[4rem] duration-200">L</span>
