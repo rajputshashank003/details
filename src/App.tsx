@@ -5,7 +5,7 @@ import RoutesComponent from './components/RoutesComponent';
 const App = () => {
   return (
     <BrowserRouter >
-      <div className='h-fit w-screen relative bg-zinc-800'>
+      <div className='h-fit w-screen relative bg-zinc-900'>
         <RoutesComponent/>
         <div className='relative bottom-4 w-full flex justify-center items-center'>
           <Footer/>

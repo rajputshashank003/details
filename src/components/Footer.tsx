@@ -12,7 +12,7 @@ function Footer() {
                     <a href="https://github.com/rajputshashank003" className="hover:underline me-4 md:me-6">Github</a>
                 </li>
                 <li>
-                    <a href="https://github.com/rajputshashank003/Chess.v.0.2.1" className="hover:underline me-4 md:me-6">Project Repo</a>
+                    <a href="https://github.com/rajputshashank003/details" className="hover:underline me-4 md:me-6">Project Repo</a>
                 </li>
             </ul>
             </div>
