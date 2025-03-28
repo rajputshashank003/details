@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import About from "./About"
-import Hero from "./Hero"
+import About from "../pages/About"
+import Hero from "../pages/Hero"
 
 const RoutesComponent = () => {
     return (
