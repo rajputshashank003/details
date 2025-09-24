@@ -14,7 +14,7 @@ const Hero = () => {
           <Options count={0} link="/about" name="About" local={true}/>
           <Options count={1} link={data.projects_link} name="Projects" local={false}/>
           <Options count={1} link={data.leetcode_link} name="Leetcode" local={false}/>
-          <Options count={0} link={data.resume_link} name="Resume" local={false}/>
+          {/* <Options count={0} link={data.resume_link} name="Resume" local={false}/> */}
           <Options count={1} link={data.twitter_link} name="Twitter" local={false}/>
           <Options count={0} link={data.github} name="Github" local={false} />
         </div>
